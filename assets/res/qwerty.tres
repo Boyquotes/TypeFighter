@@ -1,0 +1,6 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cfidbk38oj3o5"]
+
+[ext_resource type="Script" path="res://src/modes/qwerty.gd" id="1_yeix3"]
+
+[resource]
+script = ExtResource("1_yeix3")

@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://cea7t0pr0bwu8"]
+
+[ext_resource type="Script" path="res://src/main.gd" id="1_kgraw"]
+[ext_resource type="Script" path="res://src/player.gd" id="2_aw8qf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jj5i7"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mb28f"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_kgraw")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Player" type="Area2D" parent="."]
+script = ExtResource("2_aw8qf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+sprite_frames = SubResource("SpriteFrames_jj5i7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("CapsuleShape2D_mb28f")
